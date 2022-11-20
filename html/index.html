@@ -18,10 +18,11 @@
             <span class="slider round"></span>
           </label>
           <select id="selectLanguage">
-            <option value="pt" data-lang-str="selectPt">Portuguese</option>
             <option value="en" data-lang-str="selectEn" selected>
               English
             </option>
+            <option value="pt" data-lang-str="selectPt">Portuguese</option>
+            <option value="es" data-lang-str="selectEs">Spanish</option>
           </select>
         </div>
         <div class="content">
@@ -41,13 +42,13 @@
             <h1 data-lang-str="loginTitle">Login</h1>
             <input
               type="text"
-              id="username"
+              id="loginUsername"
               placeholder="Username"
               data-lang-str="inputUsername"
             />
             <input
               type="password"
-              id="password"
+              id="loginPassword"
               placeholder="Password"
               data-lang-str="inputPassword"
             />
@@ -55,9 +56,31 @@
           </div>
           <div class="tab-content hidden" id="register">
             <h1 data-lang-str="registerTitle">Register</h1>
+            <input
+              type="text"
+              id="registerUsername"
+              placeholder="Username"
+              data-lang-str="inputUsername"
+            />
+            <input
+              type="password"
+              id="registerPassword"
+              placeholder="Password"
+              data-lang-str="inputPassword"
+            />
+            <input
+              type="password"
+              id="registerConfirmPassword"
+              placeholder="Confirm password"
+              data-lang-str="inputConfirmPassword"
+            />
+            <button id="registerOk" data-lang-str="okButton">Ok</button>
           </div>
         </div>
       </div>
+    </div>
+    <div id="overlay" class="hidden">
+      <div id="text" data-lang-str="loadingText">Loading...</div>
     </div>
     <script>
       var exports = {};

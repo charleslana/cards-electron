@@ -1,0 +1,14 @@
+{
+  "selectPt": "Portugués",
+  "selectEn": "Inglés",
+  "selectEs": "Español",
+  "loginTab": "Acceso",
+  "registerTab": "Registro",
+  "loginTitle": "Acceso",
+  "registerTitle": "Registro",
+  "inputUsername": "Nombre de usuario",
+  "inputPassword": "Contraseña",
+  "inputConfirmPassword": "Confirmar contraseña",
+  "okButton": "Ok",
+  "loadingText": "Cargando..."
+}

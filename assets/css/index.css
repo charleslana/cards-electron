@@ -1,5 +1,5 @@
 * {
-  font-family: Dosis ,sans-serif;
+  font-family: Dosis, sans-serif;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -105,7 +105,7 @@ select {
 }
 
 .dark-mode-theme select {
-  background-color:#313131;
+  background-color: #313131;
   color: white;
 }
 
@@ -124,7 +124,7 @@ button {
   border: 2px solid rgba(169, 128, 195, 0.996);
   background: #fafafa;
   box-shadow: rgb(255 255 255) 0px 0px 0px 0px;
-  font-family: "Lato Black", sans-serif;
+  font-family: 'Lato Black', sans-serif;
   text-align: center;
   font-weight: 700;
   color: rgba(41, 20, 65, 0.996);
@@ -152,17 +152,20 @@ button {
   border: none;
 }
 
-button:hover, .dark-mode-theme button:hover {
+button:hover,
+.dark-mode-theme button:hover {
   background-color: rgba(100, 106, 177, 0.996094);
   color: white;
 }
 
-.dark-mode-theme button, .dark-mode-theme input {
-  background-color:#464646;
+.dark-mode-theme button,
+.dark-mode-theme input {
+  background-color: #464646;
   color: white;
 }
 
-.button-selected, .dark-mode-theme .button-selected  {
+.button-selected,
+.dark-mode-theme .button-selected {
   background-color: rgba(100, 106, 177, 0.996094);
   color: white;
 }
@@ -198,4 +201,26 @@ input {
   align-items: center;
   justify-content: center;
   margin-top: 8px;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }

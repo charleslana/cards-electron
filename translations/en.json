@@ -1,11 +1,14 @@
 {
   "selectPt": "Portuguese",
   "selectEn": "English",
+  "selectEs": "Spanish",
   "loginTab": "Login",
   "registerTab": "Register",
   "loginTitle": "Login",
   "registerTitle": "Register",
   "inputUsername": "Username",
   "inputPassword": "Password",
-  "okButton": "Ok"
+  "inputConfirmPassword": "Confirm password",
+  "okButton": "Ok",
+  "loadingText": "Loading..."
 }
