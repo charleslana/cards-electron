@@ -4,5 +4,8 @@
   "loginTab": "Login",
   "registerTab": "Register",
   "loginTitle": "Login",
-  "registerTitle": "Register"
+  "registerTitle": "Register",
+  "inputUsername": "Username",
+  "inputPassword": "Password",
+  "okButton": "Ok"
 }

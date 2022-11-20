@@ -4,5 +4,8 @@
   "loginTab": "Entrar",
   "registerTab": "Cadastrar",
   "loginTitle": "Entrar",
-  "registerTitle": "Cadastrar"
+  "registerTitle": "Cadastrar",
+  "inputUsername": "Nome de usuário",
+  "inputPassword": "Senha",
+  "okButton": "Ok"
 }

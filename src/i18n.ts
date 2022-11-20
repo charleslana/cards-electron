@@ -17,6 +17,9 @@ export function translate(location: string) {
   queryAll.forEach(element => {
     const string = element.getAttribute('data-lang-str');
     element.textContent = i18n[string as string];
+    if (element.tagName.toLowerCase() === 'input') {
+      element.setAttribute('placeholder', i18n[string as string]);
+    }
   });
   setStorage('language', location);
 }
