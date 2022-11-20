@@ -1,6 +1,9 @@
 import api from '../config/api';
+import IError from '../interfaces/IError';
+import ToastEnum from '../enums/toast-enum';
 import { getId, getSelectorAll } from '../common';
 import { loading } from './loading';
+import { toast } from './snackbar';
 
 const login = getId('login');
 const loginButton = getId('loginButton');
@@ -30,7 +33,7 @@ loginOk?.addEventListener('click', async () => {
     const response = await api.get('/login');
     console.log(response);
   } catch (error) {
-    console.log(error);
+    toast((error as IError).message, ToastEnum.Error);
   } finally {
     loading(false);
   }
