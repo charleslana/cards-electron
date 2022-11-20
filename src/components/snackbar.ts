@@ -4,12 +4,14 @@ import { getId } from '../common';
 const snackbar = getId('snackbar');
 
 export function toast(message: string, toastEnum: ToastEnum) {
-  if (!snackbar?.classList.contains('show')) {
+  snackbar?.classList.remove('success', 'error');
+  if (toastEnum === ToastEnum.Success) {
+    snackbar?.classList.add('success');
+  } else {
     snackbar?.classList.add('error');
-    if (toastEnum === ToastEnum.Success) {
-      snackbar?.classList.add('success');
-    }
-    (snackbar as HTMLElement).textContent = message;
+  }
+  (snackbar as HTMLElement).textContent = message;
+  if (!snackbar?.classList.contains('show')) {
     snackbar?.classList.add('show');
     const timeout = setTimeout(function () {
       snackbar?.classList.remove('show');
