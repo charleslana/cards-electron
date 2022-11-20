@@ -2,13 +2,13 @@
   font-family: Dosis ,sans-serif;
   margin: 0;
   padding: 0;
+  outline: 0;
 }
 
 body {
   background-color: white;
   color: black;
   margin: 0;
-  outline: 0;
 }
 
 #theme {
@@ -87,6 +87,7 @@ input:checked + .slider:before {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 10px;
 }
 
@@ -103,10 +104,6 @@ select {
   text-overflow: '';
 }
 
-select:focus {
-  outline: 0;
-}
-
 .dark-mode-theme select {
   background-color:#313131;
   color: white;
@@ -117,7 +114,6 @@ option:before {
 }
 
 button {
-  outline: none;
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
@@ -161,7 +157,7 @@ button:hover, .dark-mode-theme button:hover {
   color: white;
 }
 
-.dark-mode-theme button {
+.dark-mode-theme button, .dark-mode-theme input {
   background-color:#464646;
   color: white;
 }
@@ -181,4 +177,22 @@ button:hover, .dark-mode-theme button:hover {
 
 .hidden {
   display: none;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+
+.tab-content button {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
 }
