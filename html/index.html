@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="../assets/fonts/dosis/dosis.css" />
+    <link rel="stylesheet" href="../assets/fonts/Lato_Black/stylesheet.css" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+  </head>
+  <body>
+    <div id="theme">
+      <div class="main">
+        <div class="header">
+          <label class="switch">
+            <input id="toggleBtn" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <select id="selectLanguage">
+            <option value="pt" data-lang-str="selectPt">Portuguese</option>
+            <option value="en" data-lang-str="selectEn" selected>
+              English
+            </option>
+          </select>
+        </div>
+        <div class="content">
+          <div class="tab">
+            <button
+              data-lang-str="loginTab"
+              class="button-selected"
+              id="loginButton"
+            >
+              Login
+            </button>
+            <button data-lang-str="registerTab" id="registerButton">
+              Register
+            </button>
+          </div>
+          <div class="tab-content" id="login">
+            <h1 data-lang-str="loginTitle">Login</h1>
+          </div>
+          <div class="tab-content hidden" id="register">
+            <h1 data-lang-str="registerTitle">Register</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var exports = {};
+    </script>
+    <script>
+      require('../dist/renderer/main.js');
+    </script>
+  </body>
+</html>

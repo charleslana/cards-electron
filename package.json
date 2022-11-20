@@ -1,0 +1,28 @@
+{
+  "name": "cards-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "build": "tsc",
+    "start": "npm run build && electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^21.2.3",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "electron-reloader": "^1.2.3",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
